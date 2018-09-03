@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_account"
+            android:checked="false"
+            android:checkable="false"
+            android:icon="@mipmap/round_person_black_24dp"
+            android:title="@string/my_account_string"/>
+        <item
+            android:id="@+id/nav_settings"
+            android:checked="false"
+            android:checkable="false"
+            android:icon="@mipmap/round_settings_black_24dp"
+            android:title="@string/settings_string"/>
+        <item
+            android:id="@+id/nav_logout"
+            android:checked="false"
+            android:checkable="false"
+            android:icon="@mipmap/round_exit_to_app_black_24dp"
+            android:title="@string/logout_string"/>
+        <item
+            android:id="@+id/nav_about"
+            android:checked="false"
+            android:checkable="false"
+            android:icon="@mipmap/round_contact_support_black_24dp"
+            android:title="@string/about_string"/>
+    </group>
+</menu>

@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">WhatsAround</string>
+    <string name="uses_gps_permission">This app needs to use gps</string>
+    <string name="login_text">Login</string>
+    <string name="signup_text">Sign-up</string>
+    <string name="register_text">Don\'t have an account?   <a>Register</a> now</string>
+    <string name="create_account_text">CREATE NEW ACCOUNT</string>
+    <string name="enter_new_user_name_text">anything@mydomain.com</string>
+    <string name="enter_new_password_text">Enter New Password \(8\-12 chars\)</string>
+    <string name="reenter_new_password_text">Confirm New Password</string>
+    <string name="or_text">Account name:\n</string>
+    <string name="name_signup_failure">Invalid email address</string>
+    <string name="passwd_signup_failure">Password length must be 8\-12 chars</string>
+    <string name="passwd_signup_failure_unmatched">Passwords don\'t match</string>
+    <string name="facebook_app_id">705382123139313</string>
+    <string name="fb_login_protocol_scheme">fb705382123139313</string>
+    <string name="signout_text">Sing-out</string>
+    <string name="open_string">Open</string>
+    <string name="close_string">Close</string>
+    <string name="my_account_string">My Account</string>
+    <string name="settings_string">Settings</string>
+    <string name="logout_string">Logout</string>
+    <string name="about_string">About</string>
+    <string name="required_field">(Marked with * means required)</string>
+    <string name="accept_text">Accept</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="personal_data_string">USER\'S PERSONAL DATA</string>
+    <string name="user_name_string">Insert name</string>
+    <string name="name_string">Your Name:</string>
+    <string name="username_string">Email address</string>
+    <string name="username">Email:*</string>
+    <string name="dob_string">DOB:</string>
+    <string name="date_of_birth_string">Your date of birth</string>
+    <string name="adress_string">Address:</string>
+    <string name="enter_adress_string">Enter address</string>
+    <string name="postalcode_string">Postal Code:</string>
+    <string name="enter_postalcode_string">Enter postal code</string>
+    <string name="phone_string">Phone number:</string>
+    <string name="enter_phone_string">Enter phone number</string>
+    <string name="enter_old_password_textview_string">Old password:</string>
+    <string name="enter_old_password_edittext_string">Enter Old password</string>
+    <string name="enter_new_password_textview_string">New password:</string>
+    <string name="enter_new_password_edittext_string">Enter new password</string>
+    <string name="reenter_new_password_textview_string">Confirm:</string>
+    <string name="reenter_new_password_edittext_string">Confirm new password</string>
+    <string name="logout_question_string">Do you wish to Logout?</string>
+    <string name="about_textview_string">This App (WhatsAround) was created by Juan Iturriagagoitia. \nHOPE YOU ENJOY IT!!!
+        \nAll rights reserved. Click to close.</string>
+    <string name="search_text_string">Enter search</string>
+    <string name="user_name_header_string">Your User Name:</string>
+
+
+</resources>

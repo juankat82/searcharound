@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_account_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundGravity="left"
+    android:orientation="vertical"
+    android:theme="@style/MyMaterialTheme">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/my_account_toolbar"
+            layout="@layout/top_bar_user_screen_layout" />
+    </LinearLayout>
+    <!--TITLE BAR-->
+    <TextView
+        android:id="@+id/personal_data_title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:shadowRadius="20"
+        android:text="@string/personal_data_string"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <!--USERNAME AND ITS EDITTEXT-->
+    <TextView
+        android:id="@+id/username_text_view"
+        android:layout_width="96dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/username"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/username_edit_text"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personal_data_title_text_view" />
+    <EditText
+        android:id="@+id/username_edit_text"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="50"
+        android:editable="false"
+        android:hint="@string/username_string"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="textPersonName"
+        android:maxLength="50"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/name_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personal_data_title_text_view"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <!--YOUR NAME STRING AND ITS EDITTEXT-->
+    <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="96dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/name_string"
+        android:textAlignment="inherit"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/name_edit_text"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_text_view" />
+    <EditText
+        android:id="@+id/name_edit_text"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="40dp"
+        android:ems="50"
+        android:hint="@string/user_name_string"
+        android:textColorHint="@color/white"
+        android:inputType="textPersonName"
+        android:maxLength="24"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personal_data_title_text_view" />
+
+    <!--DATE OF BIRTH STRING AND EDITTEXT-->
+    <TextView
+        android:id="@+id/dob_text_view"
+        android:layout_width="96dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="55dp"
+        android:text="@string/dob_string"
+        android:textAlignment="inherit"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/dob_edit_text"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_text_view" />
+    <EditText
+        android:id="@+id/dob_edit_text"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="@string/date_of_birth_string"
+        android:textColorHint="@color/white"
+        android:textAlignment="center"
+        android:inputType="date"
+        android:maxLength="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personal_data_title_text_view"
+        tools:ignore="InvalidId" />
+
+    <!--ADDRESS STRING AND EDITTEXT-->
+    <TextView
+        android:id="@+id/address_text_view"
+        android:layout_width="96dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="97dp"
+        android:text="@string/adress_string"
+        android:textAlignment="inherit"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/address_edit_text"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_text_view" />
+
+    <EditText
+        android:id="@+id/address_edit_text"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="120dp"
+        android:ems="24"
+        android:maxLength="24"
+        android:hint="@string/enter_adress_string"
+        android:textColorHint="@color/white"
+        android:inputType="textPostalAddress"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personal_data_title_text_view" />
+
+    <!--ZIP STRING AND EDDITTEXT-->
+    <TextView
+        android:id="@+id/zip_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="135dp"
+        android:text="@string/postalcode_string"
+        android:textAlignment="inherit"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/zip_edit_text"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_text_view" />
+
+    <EditText
+        android:id="@+id/zip_edit_text"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="160dp"
+        android:ems="10"
+        android:maxLength="7"
+        android:hint="@string/enter_postalcode_string"
+        android:textColorHint="@color/white"
+        android:textAlignment="center"
+        android:inputType="textPostalAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/username_edit_text" />
+
+    <!--PHONE STRING AND EDITTEXT-->
+    <TextView
+        android:id="@+id/phone_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="180dp"
+        android:text="@string/phone_string"
+        android:textAlignment="inherit"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="italic"
+        android:maxLength="13"
+        app:layout_constraintEnd_toStartOf="@+id/phone_edit_text"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_text_view" />
+    <EditText
+        android:id="@+id/phone_edit_text"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="200dp"
+        android:hint="@string/enter_phone_string"
+        android:textColorHint="@color/white"
+        android:textAlignment="center"
+        android:ems="13"
+        android:maxLength="13"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/username_edit_text" />
+
+    <!--UPDATE PASSWORD STRING AND EDITTEXTS-->
+    <TextView
+        android:id="@+id/old_password_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="220dp"
+        android:text="@string/enter_old_password_textview_string"
+        android:textAlignment="inherit"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/password_edit_text"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_text_view" />
+
+    <EditText
+        android:id="@+id/old_password_edit_text"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="240dp"
+        android:ems="10"
+        android:maxLength="12"
+        android:hint="@string/enter_old_password_edittext_string"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/username_edit_text" />
+
+    <TextView
+        android:id="@+id/password_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="256dp"
+        android:text="@string/enter_new_password_textview_string"
+        android:textAlignment="inherit"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/password_edit_text"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_text_view" />
+
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="280dp"
+        android:ems="10"
+        android:textColorHint="@color/white"
+        android:hint="@string/enter_new_password_edittext_string"
+        android:maxLength="12"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/username_edit_text" />
+
+    <TextView
+        android:id="@+id/repeat_password_textview"
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="296dp"
+        android:text="@string/reenter_new_password_textview_string"
+        android:textAlignment="inherit"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/repeat_password_edit_text"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_text_view" />
+
+    <EditText
+        android:id="@+id/repeat_password_edit_text"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="320dp"
+        android:ems="10"
+        android:hint="@string/reenter_new_password_edittext_string"
+        android:textColorHint="@color/white"
+        android:maxLength="12"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/username_edit_text" />
+    <!--HERE ENDS THE FORMULARY-->
+
+    <Button
+        android:id="@+id/accept_button"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_corners"
+        android:text="@string/accept_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repeat_password_edit_text" />
+
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+
+</android.support.constraint.ConstraintLayout>

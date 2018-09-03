@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "511566442813",
+    "firebase_url": "https://whatsaround-83be0.firebaseio.com",
+    "project_id": "whatsaround-83be0",
+    "storage_bucket": "whatsaround-83be0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:511566442813:android:754e7ae446ff0978",
+        "android_client_info": {
+          "package_name": "com.main.whatsaround"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "511566442813-v1ljnbb5rumvq8nfna5b881o0dabqags.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1kzCZ3340N4xkkHB8dO4L01Nc3XW4Vv8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
