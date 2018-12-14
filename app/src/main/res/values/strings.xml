@@ -12,8 +12,6 @@
     <string name="name_signup_failure">Invalid email address</string>
     <string name="passwd_signup_failure">Password length must be 8\-12 chars</string>
     <string name="passwd_signup_failure_unmatched">Passwords don\'t match</string>
-    <string name="facebook_app_id">705382123139313</string>
-    <string name="fb_login_protocol_scheme">fb705382123139313</string>
     <string name="signout_text">Sing-out</string>
     <string name="open_string">Open</string>
     <string name="close_string">Close</string>
