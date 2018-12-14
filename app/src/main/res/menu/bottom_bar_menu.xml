@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/walk_option"
+        android:enabled="true"
+        android:icon="@drawable/walk_18dp"
+        android:title="@string/walk_string"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/drive_option"
+        android:enabled="true"
+        android:icon="@drawable/drive_18dp"
+        android:title="@string/drive_string"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/bus_option"
+        android:enabled="true"
+        android:icon="@drawable/bus_18dp"
+        android:title="@string/bus_string"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/train_option"
+        android:enabled="true"
+        android:icon="@drawable/train_18dp"
+        android:title="@string/train_string"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/tube_option"
+        android:enabled="true"
+        android:icon="@drawable/subway_18dp"
+        android:title="@string/tube_string"
+        app:showAsAction="ifRoom" />
+</menu>

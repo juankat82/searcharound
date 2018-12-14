@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WhatsAround</string>
+    <string name="app_name">SearchAround</string>
     <string name="uses_gps_permission">This app needs to use gps</string>
     <string name="login_text">Login</string>
     <string name="signup_text">Sign-up</string>
@@ -21,6 +21,17 @@
     <string name="settings_string">Settings</string>
     <string name="logout_string">Logout</string>
     <string name="about_string">About</string>
+    <string name="about_text">This app (SearchAround) was created by Juan Carlos Iturriagagoitia. \nCan be found either on google playstore for installation
+        or github in case you are a developer (source code).\nIf you download the source code from github, you are required to provide both your geo.API_KEY in
+        the manifest.xml file and your geocoding api key in UserScreenActivity.MY_GEOCODING_API_KEY constant.\nBoth keys can be
+        obtained by registering your own account on google developers console.\nWebsite: https://console.developers.google.com \n
+        Google forces you to register with your bank details BUT ONLY for identity reasons.
+        You will be provided with your own quota of over £200 monthly worth of usage of google APIs.\n
+        Feel yourself free to change the source code of this app but please keep this ABOUT text untouched
+        and dont earn money out of this proyect as it is intended to be free.\n
+        On WeatherActivity, you should also supply your own API key for weather forecast. Registering an account is also required but your
+        quota will be enormous (10000 requests per month is the free tier).
+        \nWebsite: https://www.apixu.com \nHope you enjoy it.</string>
     <string name="required_field">(Marked with * means required)</string>
     <string name="accept_text">Accept</string>
     <string name="cancel_text">Cancel</string>
@@ -44,10 +55,57 @@
     <string name="reenter_new_password_textview_string">Confirm:</string>
     <string name="reenter_new_password_edittext_string">Confirm new password</string>
     <string name="logout_question_string">Do you wish to Logout?</string>
-    <string name="about_textview_string">This App (WhatsAround) was created by Juan Iturriagagoitia. \nHOPE YOU ENJOY IT!!!
-        \nAll rights reserved. Click to close.</string>
-    <string name="search_text_string">Enter search</string>
+    <string name="search_text_string">Address/keyword/lat:lon</string>
     <string name="user_name_header_string">Your User Name:</string>
+    <string name="london_string">London</string>
+    <string name="gps_permission_required">Location Permission required</string>
+    <string name="gps_off">Gps is off</string>
+    <string name="bank_atm_string">Bank/Atm</string>
+    <string name="pub_dinning_string">Dinning</string>
+    <string name="post_office_string">Post Office</string>
+    <string name="police_string">Police Station</string>
+    <string name="hospital_string">Hospital</string>
+    <string name="cinema_string">Cinema</string>
+    <string name="parking_string">Car Park</string>
+    <string name="petrol_string">Petrol Station</string>
+    <string name="pharmacy_string">Chemist</string>
+    <string name="supermarket_string">Supermarket</string>
+    <string name="transport_stop_string">Bus</string>
+    <string name="school_string">School</string>
+    <string name="weather_string">Weather</string>
+    <string name="search_string">Search</string>
+    <string name="go_string">Go!</string>
+    <string name="refine_search_string">Narrow your search</string>
 
-
+    <string-array name="spinners_values">
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="distance_spinner_values">
+        <item>Miles</item>
+        <item>Kilometers</item>
+    </string-array>
+    <string name="distance_string">Distance:</string>
+    <string name="distance_measure_unit_string">miles</string>
+    <string name="gps_not_allowed">GPS wont start</string>
+    <string name="you_are_here_string">You are here</string>
+    <string name="start_gps_question_title">Start GPS</string>
+    <string name="get_gps_enabled_string">Gps required to be enabled</string>
+    <string name="are_you_sure_string">Are you sure?</string>
+    <string name="app_will_close_string">The app will close now</string>
+    <string name="invalid_coordinates">Invalid Coordinates(Eg: 25:25)</string>
+    <string name="enter_city_name_string">US/UK/Canada ZIP, Lat/Lon, City</string>
+    <string-array name="spinners_days_values">
+        <item>Today</item>
+        <item>Tomorrow</item>
+    </string-array>
+    <string name="unreachable_text_string">UNREACHABLE NET\nTURN ON MOBILE DATA OR WIFI\nPRESS BACK BUTTON</string>
+    <string name="slider_string">System:Decimal/Imperial     </string>
+    <string name="nodecimal_string">Imperial</string>
+    <string name="walk_string">Walk</string>
+    <string name="drive_string">Drive</string>
+    <string name="bus_string">Bus</string>
+    <string name="train_string">Train/Tram</string>
+    <string name="tube_string">Tube</string>
 </resources>

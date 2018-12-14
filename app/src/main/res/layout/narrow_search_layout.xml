@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/settings_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/MyMaterialTheme">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/search_toolbar"
+            layout="@layout/top_bar_user_screen_layout" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/search_text_view"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+
+            android:text="@string/refine_search_string"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/top_constraint_layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/money_logo" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/dinning_logo" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/hotel_logo" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/coffee_logo" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/hospital_logo" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/cinema_logo" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/parking_logo" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/gas_station_logo" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/pharmacy_logo" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/mall_logo" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/transport_logo" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/school_logo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout1"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="@string/bank_atm_string"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="@string/pub_dinning_string"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="@string/post_office_string"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="@string/police_string"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="@string/hospital_string"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="@string/cinema_string"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="@string/parking_string"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="@string/petrol_string"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="@string/pharmacy_string"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="@string/supermarket_string"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="@string/transport_stop_string"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="@string/school_string"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="2dp"
+            android:gravity="left"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/radio_group"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/radio_bank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp" />
+                <RadioButton android:id="@+id/radio_dinning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"/>
+                <RadioButton android:id="@+id/radio_post_office"
+                    android:shadowColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"/>
+                <RadioButton android:id="@+id/radio_police"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"/>
+                <RadioButton android:id="@+id/radio_hospital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"/>
+                <RadioButton android:id="@+id/radio_cinema"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"/>
+                <RadioButton android:id="@+id/radio_carpark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"/>
+                <RadioButton android:id="@+id/radio_petrol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"/>
+                <RadioButton android:id="@+id/radio_chemist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"/>
+                <RadioButton android:id="@+id/radio_supermarket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"/>
+                <RadioButton android:id="@+id/radio_public_transport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"/>
+                <RadioButton android:id="@+id/radio_school"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"/>
+            </RadioGroup>
+            <!--<CheckBox-->
+                <!--android:id="@+id/bank_checkbox"-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:theme="@style/CheckBoxStyle" />-->
+            <!--<CheckBox-->
+                <!--android:id="@+id/dinning_checkbox"-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:theme="@style/CheckBoxStyle" />-->
+            <!--<CheckBox-->
+                <!--android:id="@+id/hotel_checkbox"-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:theme="@style/CheckBoxStyle" />-->
+            <!--<CheckBox-->
+                <!--android:id="@+id/coffee_checkbox"-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:theme="@style/CheckBoxStyle" />-->
+            <!--<CheckBox-->
+                <!--android:id="@+id/hospital_checkbox"-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:theme="@style/CheckBoxStyle" />-->
+            <!--<CheckBox-->
+                <!--android:id="@+id/cinema_checkbox"-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:text="@string/school_string"-->
+                <!--android:textSelectHandleLeft="@string/school_string"-->
+                <!--android:theme="@style/CheckBoxStyle" />-->
+            <!--<CheckBox-->
+                <!--android:id="@+id/parking_checkbox"-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:theme="@style/CheckBoxStyle" />-->
+            <!--<CheckBox-->
+                <!--android:id="@+id/gas_station_checkbox"-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:theme="@style/CheckBoxStyle" />-->
+            <!--<CheckBox-->
+                <!--android:id="@+id/pharmacy_checkbox"-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:theme="@style/CheckBoxStyle" />-->
+            <!--<CheckBox-->
+                <!--android:id="@+id/supermarket_checkbox"-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:theme="@style/CheckBoxStyle" />-->
+            <!--<CheckBox-->
+                <!--android:id="@+id/transport_checkbox"-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:layout_below="@id/bank_checkbox"-->
+                <!--android:theme="@style/CheckBoxStyle" />-->
+            <!--<CheckBox-->
+                <!--android:id="@+id/school_checkbox"-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:theme="@style/CheckBoxStyle" />-->
+
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/distance_string"
+            android:paddingTop="8dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+        <Spinner
+            android:id="@+id/spinner"
+            android:popupBackground="@color/white"
+            android:textAlignment="center"
+            android:paddingTop="8dp"
+            android:pointerIcon="arrow"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center" />
+        <Spinner
+            android:id="@+id/measure_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:pointerIcon="arrow"
+            android:textAlignment="center"
+            android:paddingTop="5dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/bottom_constraint_layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="142dp"
+        android:layout_marginBottom="8dp"
+        android:paddingTop="50dp">
+
+
+        <Button
+            android:id="@+id/cancel_search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="@string/cancel_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/search_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:text="@string/search_string"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cancel_search_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

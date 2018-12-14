@@ -2,17 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_account"
-            android:checked="false"
-            android:checkable="false"
-            android:icon="@mipmap/round_person_black_24dp"
-            android:title="@string/my_account_string"/>
-        <item
             android:id="@+id/nav_settings"
             android:checked="false"
             android:checkable="false"
             android:icon="@mipmap/round_settings_black_24dp"
             android:title="@string/settings_string"/>
+        <item
+            android:id="@+id/nav_weather"
+            android:checked="false"
+            android:checkable="false"
+            android:icon="@mipmap/weather_icon_24dp"
+            android:title="@string/weather_string"/>
         <item
             android:id="@+id/nav_logout"
             android:checked="false"
